@@ -1,0 +1,37 @@
+.button {
+    padding: .5rem .75rem;    
+    border: 1px solid transparent;
+    border-radius: .15rem;
+    color: $white-color;
+    transition: .3s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.primary {
+        @include setButtonColor($primal-color, $primal-color-dark);                       
+    }
+    &.secondary {
+        @include setButtonColor($secondary-color, $secondary-color-dark);         
+    }
+    &.success {
+        @include setButtonColor($grass-color, $grass-color-dark);
+    }
+    &.warning {
+        @include setButtonColor($sun-color, $sun-color-dark);
+    }
+    &.info {
+        @include setButtonColor($water-color, $water-color-dark);
+    }
+    &.danger {
+        @include setButtonColor($fire-color, $fire-color-dark);
+    }
+    &.dark {
+        @include setButtonColor($dark-color, $dark-color-dark);        
+    }
+
+    &.rounded {
+        border-radius: 3rem;
+    }
+}

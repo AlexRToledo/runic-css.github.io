@@ -1,0 +1,6 @@
+.field {       
+    @include setField(column, flex-start, 1rem, .5rem, 0);
+    &-inline {      
+        @include setField(row, center, 1rem, 0, .75rem);
+    }    
+}
